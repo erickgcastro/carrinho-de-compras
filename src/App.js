@@ -15,6 +15,4 @@ function App() {
   );
 }
 
-const style = {};
-
 export default App;

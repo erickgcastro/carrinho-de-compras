@@ -1,4 +1,4 @@
-import { createSlice, createEntityAdapter, nanoid } from "@reduxjs/toolkit"
+import { createSlice, createEntityAdapter } from "@reduxjs/toolkit"
 import dataProducts from "../products"
 
 const productsAdapter = createEntityAdapter({

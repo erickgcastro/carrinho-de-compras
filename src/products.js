@@ -1,6 +1,6 @@
 import { nanoid } from "@reduxjs/toolkit"
 
-export default [
+const products = [
   {
     id: nanoid(),
     name: "Nike Air Max 90 RS ",
@@ -82,3 +82,5 @@ export default [
       "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-zoom-freak-3-unissex-DA0694-101-1-11628003700.jpg",
   },
 ]
+
+export default products
