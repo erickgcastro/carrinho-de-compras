@@ -30,6 +30,7 @@ const Cep = () => {
       <button onClick={handleClickCalc}>OK</button>
       <a
         target='_blank'
+        rel='noreferrer'
         href='https://buscacepinter.correios.com.br/app/endereco/index.php'
       >
         Não lembro meu CEP
