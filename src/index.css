@@ -1,13 +1,79 @@
-body {
+:root {
+  --mono-1: #403e3f;
+  --mono-2: #f2f2f2;
+  --mono-3: #bfbfbf;
+  --mono-4: #8c8c8c;
+  --mono-5: #0d0d0d;
+  --shine-1: #d5d8dd;
+  --shine-2: #5ca2be;
+  --shine-3: #00a3d3;
+  --shine-4: #989da4;
+  --shine-5: #003747;
+  --red: #f80c54;
+  --pink: #d90bb1;
+  --purple-2: #ca01f0;
+  --purple-3: #7e0bd9;
+  --blue: #500cf8;
+}
+
+* {
+  text-decoration: none;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  color: var(--mono-5);
+}
+
+body {
+  overflow-x: hidden;
+  background: #e5e5e5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header.hn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--mono-5);
+  width: 100vw;
+  height: 130px;
+}
+header.hn nav {
+  width: max-content;
+  text-align: left;
+}
+a.nl {
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: var(--mono-2);
+  transition: box-shadow 100ms linear;
+  border: solid 1px transparent;
+}
+a.nl:hover {
+  border-color: var(--mono-5);
+  color: var(--red);
+}
+a.nl span {
+  border-radius: 6px;
+  margin-left: 5px;
+  padding: 0 3px;
+  background: var(--mono-5);
+  color: var(--red);
+  font-weight: 600;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
 }

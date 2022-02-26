@@ -1,0 +1,193 @@
+
+section.cc {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+section.cc section.cep,
+section.cc section.cp,
+section.cc aside {
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  width: 700px;
+}
+
+section.cc section.cep {
+  margin-bottom: 20px;
+}
+section.cc section.cep input[type="text"] {
+  max-width: 150px;
+  border-radius: 3px;
+  border: solid 1px var(--mono-4);
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  outline-color: var(--shine-5);
+}
+section.cc section.cep button {
+  cursor: pointer;
+  border: solid 1px transparent;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  font-weight: 600;
+  color: var(--mono-2);
+  background: var(--shine-5);
+  width: 45px;
+  height: 41px;
+  margin-left: 0.5rem;
+  transition: color 500ms ease;
+  transition: background 500ms ease;
+}
+section.cc section.cep button:hover {
+  border: solid 1px;
+  color: var(--shine-5);
+  background: var(--shine-1);
+}
+section.cc section.cep a {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: var(--shine-5);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+section.cc section.cp header {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+section.cc section.cp header button {
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgb(231, 38, 38);
+  background: transparent;
+  border: 1px solid rgb(231, 38, 38);
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.25rem;
+}
+section.cc section.cp div.pdt {
+  border-top: 1px solid var(--mono-3);
+  padding: 10px 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.cp div.pdt div.inf-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section.cp div.pdt div.inf-1 img {
+  width: 88px;
+  height: 88px;
+}
+section.cp div.pdt div.inf-1 span {
+  width: 150px;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  overflow: hidden;
+  max-height: 3.375rem;
+  color: rgb(66, 70, 77);
+}
+
+section.cp div.pdt div.inf-2 {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+section.cp div.pdt div.inf-2 span {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: var(--shine-5);
+}
+section.cp div.pdt div.inf-2 div.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+div.actions div.qtd button {
+  background: transparent;
+  border: none;
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 22px;
+  padding: 0 5px;
+  cursor: pointer;
+  color: var(--shine-5);
+}
+div.actions div.qtd span {
+  padding: 0 10px;
+  font-size: 18px;
+}
+div.actions button.btn-rmv {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgb(231, 38, 38);
+}
+
+section.cc aside {
+  width: 290px;
+  height: 200px;
+}
+section.cc aside div.totalBoleto {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgb(229, 255, 241);
+}
+section.cc aside div.totalBoleto span {
+  color: rgb(31, 144, 80);
+}
+section.cc aside div.totalBoleto .price {
+  color: rgb(31, 144, 80);
+  font-size: 1.875rem;
+  line-height: 2.375rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+section.cc aside button {
+  margin-top: 15px;
+  cursor: pointer;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid var(--shine-5);
+  background-color: var(--shine-5);
+  user-select: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease 0s;
+  border-radius: 0.25rem;
+}
+section.cc aside button:hover{
+  background-color: #004f66;
+}

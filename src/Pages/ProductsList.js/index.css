@@ -1,0 +1,129 @@
+
+section.carousel {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+section.carousel button.arrow{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+section.carousel button.arrow:first-child img{
+  transform: rotate(180deg);
+}
+
+section.pl {
+  padding: 15px;
+  width: 70%;
+  height: 420px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 20px;
+}
+section.pl::-webkit-scrollbar{
+  display: none;
+}
+div.product {
+  min-height: 403px;
+  max-height: 403px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 200ms linear;
+}
+div.product:hover {
+  box-shadow: 0px 5px 10px var(--mono-1);
+}
+div.product a div {
+  padding: 10px 5px 0;
+}
+div.product a img.pdt {
+  width: 230px;
+  height: 230px;
+}
+div.product a div h2 {
+  font-size: 1.2rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+div.product a div span {
+  color: var(--shine-3);
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  font-weight: 700;
+}
+
+div.product div.btns-product {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 20px;
+}
+div.product div.btns-product button {
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: var(--shine-5);
+  border: solid 1px var(--shine-5);
+  color: var(--shine-1);
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 0;
+  transition: color 200ms ease;
+}
+div.product div.btns-product button:hover {
+  background: var(--shine-4);
+  border-color: var(--shine-4);
+  color: var(--shine-5);
+}
+
+div.product div.btns-product button.re-btn {
+  background: transparent;
+  border: solid 1px transparent;
+  color: var(--mono-5);
+}
+div.product div.btns-product button.re-btn:hover {
+  text-decoration: underline;
+}
+
+div.product div.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 7px;
+}
+div.product div.loading div.box {
+  opacity: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--mono-5);
+  animation: loading 1.5s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+div.product div.loading div.box:nth-child(2) {
+  animation-delay: 0.5s;
+}
+div.product div.loading div.box:nth-child(3) {
+  animation-delay: 1s;
+}
