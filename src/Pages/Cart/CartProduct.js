@@ -12,6 +12,7 @@ const CartProduct = ({ productId }) => {
   const product = useSelector((state) => selectCartProduct(state, productId))
 
   const deDisabled = product.qtd === 1
+  const inDisabled = product.qtd === 10
 
   const increment = () =>
     dispatch(updateProduct({ id: productId, qtd: product.qtd + 1 }))
@@ -39,7 +40,9 @@ const CartProduct = ({ productId }) => {
               {"<"}
             </button>
             <span>{product.qtd}</span>
-            <button onClick={increment}>{">"}</button>
+            <button disabled={inDisabled} onClick={increment}>
+              {">"}
+            </button>
           </div>
           <button className='btn-rmv' onClick={removeItem}>
             Remover
