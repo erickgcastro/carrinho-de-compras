@@ -72,6 +72,7 @@ const Product = ({ productId }) => {
         </div>
       </Link>
       <div className='btns-product'>
+
         {loading ? (
           <div className='loading'>
             <div className='box'></div>
@@ -81,6 +82,7 @@ const Product = ({ productId }) => {
         ) : (
           buttons
         )}
+        
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { selectAllCartProducts, removeAllProducts } from "../../store/cartSlice"
-import './index.css'
+import "./index.css"
 
 import Cep from "./Cep"
 import CartProduct from "./CartProduct"
@@ -20,11 +20,11 @@ const Cart = () => {
   return (
     <main>
       <section className='cc'>
-        <section>
+        <section className='fc'>
           <Cep />
           <section className='cp'>
             <header>
-              <h2>Produtos</h2>
+              <h2 style={{ marginRight: 10 }}>Produtos</h2>
               <button onClick={removeProducts}>
                 Remover todos os produtos
               </button>

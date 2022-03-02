@@ -77,3 +77,11 @@ main {
   box-sizing: border-box;
   width: 100%;
 }
+
+
+
+@media (max-width: 340px) {
+  header.hn h1{
+    font-size: 27px;
+  }
+}

@@ -1,17 +1,16 @@
-
 section.carousel {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-section.carousel button.arrow{
+section.carousel button.arrow {
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
-section.carousel button.arrow:first-child img{
+section.carousel button.arrow:first-child img {
   transform: rotate(180deg);
 }
 
@@ -22,9 +21,10 @@ section.pl {
   overflow: scroll;
   scroll-behavior: smooth;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
-section.pl::-webkit-scrollbar{
+section.pl::-webkit-scrollbar {
   display: none;
 }
 div.product {
@@ -126,4 +126,16 @@ div.product div.loading div.box:nth-child(2) {
 }
 div.product div.loading div.box:nth-child(3) {
   animation-delay: 1s;
+}
+
+@media (max-width: 768px) {
+  section.carousel button.arrow {
+    display: none;
+  }
+}
+@media (max-width: 666px) {
+  section.pl {
+    width: 100%;
+    flex-direction: column;
+  }
 }
