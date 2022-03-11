@@ -128,7 +128,7 @@ div.product div.loading div.box:nth-child(3) {
   animation-delay: 1s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.carousel button.arrow {
     display: none;
   }
